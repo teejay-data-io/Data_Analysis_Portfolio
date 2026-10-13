@@ -3,6 +3,8 @@
 **Where does a $2.75B retail business make its money, and what really drives its sales?**
 An end-to-end Power BI project: 7 raw CSV files → Power Query → star-schema data model → 14 focused DAX measures → an interactive, optimized sales dashboard.
 
+🧮 **SQL version:** I also analysed the same data in MySQL. See the [Retail Sales Analysis (SQL) project](../../SQL/Retail-Sales-Analysis).
+
 ![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
 ![DAX](https://img.shields.io/badge/DAX-14%20Measures-0078D4?style=for-the-badge)
 ![Power Query](https://img.shields.io/badge/Power%20Query-M-217346?style=for-the-badge)
