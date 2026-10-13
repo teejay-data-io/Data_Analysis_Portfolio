@@ -69,7 +69,7 @@ The business had a million sales records but no single view of performance. Mana
 
 | Item | Details |
 |---|---|
-| **Source** | Retail sales dataset, 7 CSV files (`fact_sales_denormalized.csv` plus six dimension files) |
+| **Source** | Retail sales dataset, 7 CSV files (`fact_sales_denormalized.csv` plus six dimension files), from Kaggle: [Retail Store Star Schema Dataset](https://www.kaggle.com/datasets/shrinivasv/retail-store-star-schema-dataset) |
 | **Rows** | **1,000,000** sales transactions (one row per sale), plus 103,126 rows across the dimension tables |
 | **Columns** | **9** in the sales fact table; **32** across all 7 tables after cleaning and optimization |
 | **Coverage** | 2 Jan – 26 Dec 2024 (360 trading days), 500 stores in 50 US cities |

@@ -31,6 +31,8 @@ This project is the SQL side of my retail sales analysis. I loaded the data into
 
 ## 📦 Dataset
 
+**Source:** [Retail Store Star Schema Dataset](https://www.kaggle.com/datasets/shrinivasv/retail-store-star-schema-dataset) on Kaggle (by shrinivasv)
+
 The CSV files for this project are stored once, in my [Retail Sales Report (Power BI) folder](../../../PowerBi/Retail%20Sales%20Report), and are shared with the Power BI dashboard:
 
 | Table | CSV file |
@@ -40,7 +42,7 @@ The CSV files for this project are stored once, in my [Retail Sales Report (Powe
 | `dim_stores` | [`dim_stores.csv`](../../../PowerBi/Retail%20Sales%20Report/dim_stores.csv) |
 | `dim_salespersons` | [`dim_salespersons.csv`](../../../PowerBi/Retail%20Sales%20Report/dim_salespersons.csv) |
 | `dim_campaigns` | [`dim_campaigns.csv`](../../../PowerBi/Retail%20Sales%20Report/dim_campaigns.csv) |
-| `fact_saless_denorm` | `fact_saless_denormalized.csv`: not included in this repository because of its size (1,000,000 rows) |
+| `fact_saless_denorm` | `fact_saless_denormalized.csv`: not included in this repository because of its size (1,000,000 rows). Download the full dataset from [Kaggle](https://www.kaggle.com/datasets/shrinivasv/retail-store-star-schema-dataset) (the file there is named `fact_sales_denormalized.csv`) |
 
 ## 🛠️ Tools & SQL techniques
 
@@ -510,7 +512,7 @@ ORDER BY revenue DESC;
 1. Install **MySQL 8.0** and **MySQL Workbench**.
 2. Make sure `local_infile` is allowed on both the server and the client connection (the script runs `SET GLOBAL LOCAL_INFILE=ON;`; in Workbench, add `OPT_LOCAL_INFILE=1` under the connection's *Advanced* settings).
 3. Import the dimension tables (`dim_customers`, `dim_products`, `dim_stores`, `dim_salespersons`, `dim_campaigns`) into the `Retail` database. The CSV files are in the [Power BI project folder](../../../PowerBi/Retail%20Sales%20Report) (see [Dataset](#-dataset)).
-4. In [`retail_sales_analysis.sql`](retail_sales_analysis.sql), replace `path/to/fact_saless_denormalized.csv` with the location of the fact CSV on your machine (the fact CSV is not included in this repository; see [Dataset](#-dataset)).
+4. Download the fact CSV (`fact_sales_denormalized.csv`) from the [Kaggle dataset](https://www.kaggle.com/datasets/shrinivasv/retail-store-star-schema-dataset); it is not included in this repository (see [Dataset](#-dataset)). Then, in [`retail_sales_analysis.sql`](retail_sales_analysis.sql), replace `path/to/fact_saless_denormalized.csv` with its location on your machine.
 5. Run the script top to bottom, or run each query on its own to reproduce the results above.
 
 The script also includes queries not shown above: customer share by segment, month-over-month revenue growth, and sales with vs. without a campaign.
