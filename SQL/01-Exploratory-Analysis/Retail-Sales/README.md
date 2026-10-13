@@ -1,4 +1,6 @@
-# 🛒 Retail Sales Analysis | SQL (MySQL)
+# 🛒 Retail Sales: Exploratory Data Analysis (SQL)
+
+📂 Part of the **[01 · Exploratory Analysis](../../README.md#01--exploratory-analysis)** section of my [SQL projects](../../README.md).
 
 **Exploring 1,000,000 retail sales transactions with SQL to answer core business questions on revenue, products, customers, stores, seasonality and marketing.**
 
@@ -6,7 +8,7 @@
 ![SQL](https://img.shields.io/badge/SQL-Analysis-CC2927?style=for-the-badge)
 ![Data Model](https://img.shields.io/badge/Data%20Model-Star%20Schema-6A1B9A?style=for-the-badge)
 
-📄 **Full script:** [`retail_sales_analysis.sql`](retail_sales_analysis.sql) · 📈 **Companion Power BI dashboard:** [Retail Sales Analytics](../../PowerBi/Retail%20Sales%20Report)
+📄 **Full script:** [`retail_sales_analysis.sql`](retail_sales_analysis.sql) · 📈 **Companion Power BI dashboard:** [Retail Sales Analytics](../../../PowerBi/Retail%20Sales%20Report)
 
 ---
 
@@ -494,7 +496,7 @@ ORDER BY revenue DESC;
 
 1. Install **MySQL 8.0** and **MySQL Workbench**.
 2. Make sure `local_infile` is allowed on both the server and the client connection (the script runs `SET GLOBAL LOCAL_INFILE=ON;`; in Workbench, add `OPT_LOCAL_INFILE=1` under the connection's *Advanced* settings).
-3. Import the dimension tables (`dim_customers`, `dim_products`, `dim_stores`, `dim_salespersons`, `dim_campaigns`) into the `Retail` database. The CSV files are in the [Power BI project folder](../../PowerBi/Retail%20Sales%20Report).
+3. Import the dimension tables (`dim_customers`, `dim_products`, `dim_stores`, `dim_salespersons`, `dim_campaigns`) into the `Retail` database. The CSV files are in the [Power BI project folder](../../../PowerBi/Retail%20Sales%20Report).
 4. In [`retail_sales_analysis.sql`](retail_sales_analysis.sql), replace `path/to/fact_saless_denormalized.csv` with the location of the fact CSV on your machine.
 5. Run the script top to bottom, or run each query on its own to reproduce the results above.
 
@@ -503,7 +505,7 @@ The script also includes queries not shown above: customer share by segment, mon
 ## 📁 Folder structure
 
 ```
-SQL/Retail-Sales-Analysis/
+SQL/01-Exploratory-Analysis/Retail-Sales/
 ├── retail_sales_analysis.sql   # full MySQL script
 ├── README.md                   # this write-up
 └── images/                     # query result screenshots

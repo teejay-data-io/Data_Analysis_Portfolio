@@ -1,5 +1,5 @@
 /* =====================================================================
-   Project : Retail Sales Analysis (SQL)
+   Project : Retail Sales: Exploratory Data Analysis (SQL)
    Author  : Tajudeen Gbenga Rabiu
    Tool    : MySQL 8.0 (MySQL Workbench)
    Data    : 1,000,000 retail sales transactions in a star schema
