@@ -530,7 +530,7 @@ SQL/01-Exploratory-Analysis/Retail-Sales/
 
 ## 👤 Author
 
-**Tajudeen Gbenga Rabiu**
+**Tajudeen Olugbenga Rabiu**
 | Data Analyst · Power BI · SQL · Python · Excel
 
 - 💼 LinkedIn: [linkedin.com/in/tajudeen-rabiu-data](https://www.linkedin.com/in/tajudeen-rabiu-data)

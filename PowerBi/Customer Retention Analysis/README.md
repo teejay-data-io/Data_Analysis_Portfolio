@@ -217,7 +217,7 @@ Every customer who scored 1 or 2 churned, and none who scored 4 or 5 did. The sc
 
 ## 👤 Author
 
-**Tajudeen Gbenga Rabiu** | Data Analyst · Power BI · SQL · Python · Excel
+**Tajudeen Olugbenga Rabiu** | Data Analyst · Power BI · SQL · Python · Excel
 
 - 💼 LinkedIn: [linkedin.com/in/tajudeen-rabiu-data](https://www.linkedin.com/in/tajudeen-rabiu-data)
 - 📧 Email: [tjrabiu.data@gmail.com](mailto:tjrabiu.data@gmail.com)
